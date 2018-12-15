@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Proyecto Arquitectura</title>
+    <link rel="icon" type="image/png" href="img/aassdd.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <h1 id="titulo">CatraComputer</h1>
+    <div id="areaTrabajo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="panel">
+                        Registros&nbsp;&nbsp;&nbsp;
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAzODQgMzg0IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibTMzNiA0OGgtODB2LTQ4aC0zMnY0OGgtNjR2LTQ4aC0zMnY0OGgtODB2ODBoLTQ4djMyaDQ4djY0aC00OHYzMmg0OHY4MGg4MHY0OGgzMnYtNDhoNjR2NDhoMzJ2LTQ4aDgwdi04MGg0OHYtMzJoLTQ4di02NGg0OHYtMzJoLTQ4em0tMzIgODB2MTc2aC0yMjR2LTIyNGgyMjR6bTAgMCIgZmlsbD0iIzAwNkRGMCIvPjxwYXRoIGQ9Im0xNDQgMTQ0aDMydjMyaC0zMnptMCAwIiBmaWxsPSIjMDA2REYwIi8+PHBhdGggZD0ibTIwOCAxNDRoMzJ2MzJoLTMyem0wIDAiIGZpbGw9IiMwMDZERjAiLz48cGF0aCBkPSJtMjA4IDIwOGgzMnYzMmgtMzJ6bTAgMCIgZmlsbD0iIzAwNkRGMCIvPjxwYXRoIGQ9Im0xNDQgMjA4aDMydjMyaC0zMnptMCAwIiBmaWxsPSIjMDA2REYwIi8+PC9zdmc+Cg==" />
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">Registro</div>
+                                <div class="col">Valor</div>
+                            </div>
+                        </div>
+                        <div id="div-registros" class="panel-datos container">
+                            <div class="row">
+                                <div id="col-acumulador" class="col dato">
+                                    AC
+                                </div>
+                                <div id="col-valor-acumulador" class="col dato">
+                                    +00000
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="col-contador" class="col dato">
+                                    PC
+                                </div>
+                                <div id="col-valor-contador" class="col dato">
+                                    +00000
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="col-ir" class="col dato">
+                                    IR
+                                </div>
+                                <div id="col-valor-ir" class="col dato">
+                                    +00000
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="div-pantalla">
+                            <img src="img/pantalla4.jpg" width="100%">
+                            <div id="mensaje-pantalla">: )</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="panel">
+                        Area de texto&nbsp;&nbsp;&nbsp;
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxnPgogICAgICA8cGF0aCBkPSJtMTE5LjIsMTE0LjNoLTEwOS40Yy0yLjMsMC00LjEsMS45LTQuMSw0LjFzMS45LDQuMSA0LjEsNC4xaDEwOS41YzIuMywwIDQuMS0xLjkgNC4xLTQuMXMtMS45LTQuMS00LjItNC4xeiIgZmlsbD0iI2NmY2ZjZiIvPgogICAgICA8cGF0aCBkPSJtNS43LDc4bC0uMSwxOS41YzAsMS4xIDAuNCwyLjIgMS4yLDMgMC44LDAuOCAxLjgsMS4yIDIuOSwxLjJsMTkuNC0uMWMxLjEsMCAyLjEtMC40IDIuOS0xLjJsNjctNjdjMS42LTEuNiAxLjYtNC4yIDAtNS45bC0xOS4yLTE5LjRjLTEuNi0xLjYtNC4yLTEuNi01LjktMS43NzYzNmUtMTVsLTEzLjQsMTMuNS01My42LDUzLjVjLTAuNywwLjgtMS4yLDEuOC0xLjIsMi45em03MS4yLTYxLjFsMTMuNSwxMy41LTcuNiw3LjYtMTMuNS0xMy41IDcuNi03LjZ6bS02Mi45LDYyLjlsNDkuNC00OS40IDEzLjUsMTMuNS00OS40LDQ5LjMtMTMuNiwuMSAuMS0xMy41eiIgZmlsbD0iI2NmY2ZjZiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==" />
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">
+                                    <textarea id="areaTexto"></textarea>
+                                </div>
+                                <div class="col-4">
+                                    <div>
+                                        <button id="btn-compilar" onclick="ejecutarComando('?comp');" class="btn btn-light" title="Compilar: Depura el programa." style="margin-top: 5px;">
+                                            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQxOC44NzkgNDE4Ljg3OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDE4Ljg3OSA0MTguODc5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE4OC42MzQsMjM0LjA2NmM4LjQ2Mi01LjI4NywxNi4xMjYtMTEuNzM1LDIyLjc2Ny0xOS4xMjdsMjMuOTQyLDEzLjgyNmwyMS44LTM3Ljc2bC0yMy44OTQtMTMuNzk2ICAgIGMzLjAzOC05LjI3NSw0LjgyNS0xOS4xMTMsNS4xNi0yOS4zMTFsMjcuMTgzLTQuNzkzbC03LjU3NC00Mi45MzhsLTI3LjE3OCw0Ljc5M2MtMy43NTYtOS4zMDktOC43OTUtMTcuOTY1LTE0LjkwNi0yNS43NDQgICAgbDE3Ljc2Ni0yMS4xN0wyMDAuMywzMC4wMjJsLTE3Ljc1MSwyMS4xNTJjLTguNjctNC42NDYtMTguMDU5LTguMTE5LTI3Ljk1NC0xMC4yMDNWMTMuMzg1aC00My42djI3LjU4NiAgICBjLTkuODk2LDIuMDg0LTE5LjI4NSw1LjU1Ny0yNy45NTYsMTAuMjAzbC0xNy43NS0yMS4xNTJsLTMzLjQsMjguMDI1bDE3Ljc2NCwyMS4xN2MtNi4xMSw3Ljc3OS0xMS4xNDksMTYuNDM2LTE0LjkwNSwyNS43NDQgICAgTDcuNTcsMTAwLjE2OEwwLDE0My4xMDZsMjcuMTc5LDQuNzkzYzAuMzM1LDEwLjE5OSwyLjEyMywyMC4wMzUsNS4xNjEsMjkuMzEzTDguNDQ0LDE5MS4wMDdsMjEuODAxLDM3Ljc1OWwyMy45NDMtMTMuODIyICAgIGM2LjYzOSw3LjM4OSwxNC4zMDMsMTMuODM4LDIyLjc2NiwxOS4xMjVsLTkuNDUxLDI1Ljk2M2w0MC45NzIsMTQuOTFsOS40MzgtMjUuOTI4YzQuODY0LDAuNjg4LDkuODMxLDEuMDUzLDE0Ljg4MiwxLjA1MyAgICBjNS4wNTEsMCwxMC4wMTktMC4zNjMsMTQuODgzLTEuMDUzbDkuNDM3LDI1LjkzbDQwLjk3LTE0LjkxNEwxODguNjM0LDIzNC4wNjZ6IE0xMzIuNzkzLDIwMC4wNjUgICAgYy0zMC43MDIsMC01NS42OC0yNC45NzctNTUuNjgtNTUuNjhjMC0zMC43MDEsMjQuOTc4LTU1LjY4LDU1LjY4LTU1LjY4czU1LjY4LDI0Ljk3OSw1NS42OCw1NS42OCAgICBDMTg4LjQ3MywxNzUuMDg4LDE2My40OTYsMjAwLjA2NSwxMzIuNzkzLDIwMC4wNjV6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTM3Ni4wNDEsMjY2LjgwN2wtMTguNzk1LDYuMDhjLTMuNTg0LTYuMjI5LTguMDE0LTExLjg2OS0xMy4xMTUtMTYuNzc5bDEwLjUwNC0xNi43NjRsLTI2LjQ0Ny0xNi41N2wtMTAuNDk4LDE2Ljc1ICAgIGMtNi42MDQtMi40MzgtMTMuNjAyLTMuOTczLTIwLjgyNi00LjQ3MWwtMi43MjUtMTkuNTU5bC0zMC45MTIsNC4zMDlsMi43MjUsMTkuNTU5Yy02LjgwOSwyLjQ1My0xMy4xMjUsNS44NDctMTguODEyLDkuOTk2ICAgIGwtMTQuNjcyLTEzLjI0NGwtMjAuOTEyLDIzLjE2OGwxNC42ODQsMTMuMjU5Yy0zLjU2Miw2LjExOC02LjI3NywxMi43NTItOC4wMiwxOS43MjZsLTE5Ljc0NC0wLjcxNGwtMS4xMjksMzEuMTg4bDE5Ljc0MywwLjcxNiAgICBjMS4yNDYsNy4xOTgsMy40ODYsMTMuOTkxLDYuNTU4LDIwLjI3MWwtMTUuNTc4LDEyLjE0M2wxOS4xODUsMjQuNjE1bDE1LjYwOS0xMi4xNjRjNS40MzgsNC41ODIsMTEuNTExLDguMzk2LDE4LjAzMSwxMS4zMTEgICAgbC00LjEzOCwxOS4zNDRsMzAuNTIyLDYuNTJsNC4xMzMtMTkuMzE0YzMuNTE2LDAuMDEsNy4wNzItMC4yMjksMTAuNjUyLTAuNzI3YzMuNTgyLTAuNDk4LDcuMDctMS4yNSwxMC40NDctMi4yMTVsOS4yNTYsMTcuNDUxICAgIGwyNy41NzQtMTQuNjIzbC05LjI2Ni0xNy40NzFjNS40OC00LjU4NiwxMC4yNzEtOS45MTgsMTQuMjUyLTE1LjgxMmwxOC4zMzgsNy40MzZsMTEuNzI3LTI4LjkyNGwtMTguMzAzLTcuNDIyICAgIGMxLjIzNC02Ljg3NSwxLjUyOS0xNC4wMjcsMC43NjQtMjEuMjkzbDE4Ljc5OS02LjA4NEwzNzYuMDQxLDI2Ni44MDd6IE0yOTcuMTI5LDM1MC4wMDYgICAgYy0yMS43NzEsMy4wMzEtNDEuOTQ5LTEyLjIwOS00NC45OC0zMy45NzdjLTMuMDM3LTIxLjc2OSwxMi4yMDctNDEuOTQ5LDMzLjk3Ny00NC45NzljMjEuNzY4LTMuMDM2LDQxLjk0MSwxMi4yMDcsNDQuOTgsMzMuOTc4ICAgIEMzMzQuMTM1LDMyNi43OTUsMzE4Ljg5NiwzNDYuOTY5LDI5Ny4xMjksMzUwLjAwNnoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNNDE4LjE0NiwxNTguNjQ3bDAuNzMyLTI0LjYyOWwtMTUuNTg2LTAuNDYzYy0wLjk3Ny01LjQyOC0yLjcyMy0xMC44MDMtNS4yODUtMTUuOTcxbDEyLjI0LTkuNjdsLTE1LjI3MS0xOS4zMyAgICBsLTEyLjIzOCw5LjY2NmMtNC4zNjUtMy42MjctOS4xOTMtNi41ODQtMTQuMzE4LTguODE2bDMuMTY0LTE1LjI5MWwtMjQuMTIzLTQuOTk2bC0zLjE3LDE1LjI4MSAgICBjLTUuNTU5LDAuMDA4LTExLjE1NiwwLjc5Ny0xNi42NDEsMi40MTJsLTcuMzkxLTEzLjcyN2wtMjEuNjk1LDExLjY4NGw3LjM5MSwxMy43MjljLTQuMzYzLDMuNjg2LTguMTA3LDcuOTM0LTExLjE3NiwxMi41NjYgICAgbC0xNC40OTYtNS43N2wtOS4xMTEsMjIuODkzbDE0LjUwOCw1Ljc3OWMtMC45NTUsNS41MDgtMS4xNDEsMTEuMTU4LTAuNTE0LDE2Ljc5OWwtMTQuODA5LDQuODk4bDcuNzMyLDIzLjM5NWwxNC44MDktNC44OTYgICAgYzIuOSw0Ljk4Niw2LjQyNiw5LjM5NiwxMC40MjYsMTMuMjAxbC04LjE5MSwxMy4yNjhsMjAuOTYzLDEyLjk0Nmw4LjIwOS0xMy4yOTJjNS4yODUsMS44OTYsMTAuODI4LDMuMDUxLDE2LjQ1MywzLjQxNCAgICBsMi4yNTIsMTUuNDUzbDI0LjM4My0zLjU2MWwtMi4yNDYtMTUuNDM0YzIuNjAyLTAuOTU3LDUuMTctMi4xMDksNy42ODQtMy40NjNjMi41MTYtMS4zNTIsNC44OTEtMi44NjcsNy4xMjMtNC41MWwxMS42NDgsMTAuMzcxICAgIGwxNi4zODctMTguMzk4bC0xMS42NTYtMTAuMzgzYzIuNzk1LTQuOSw0Ljg3NS0xMC4xNjQsNi4yMDMtMTUuNjE5TDQxOC4xNDYsMTU4LjY0N3ogTTM1OS40MzYsMTcxLjg0NCAgICBjLTE1LjI4MSw4LjIyNy0zNC40MDQsMi40OTItNDIuNjI3LTEyLjc4M2MtOC4yMy0xNS4yNzctMi40OTQtMzQuNDA0LDEyLjc4Ny00Mi42MjdjMTUuMjczLTguMjI5LDM0LjM5NS0yLjQ5LDQyLjYyNSwxMi43ODcgICAgQzM4MC40NDMsMTQ0LjQ5OSwzNzQuNzExLDE2My42MTYsMzU5LjQzNiwxNzEuODQ0eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button id="btn-reiniciar" onclick="reiniciar();" class="btn btn-light btns-area" title="Reiniciar: Reinicia el programa">
+                                            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE0LjE1NSAxNC4xNTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE0LjE1NSAxNC4xNTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8cGF0aCBkPSJNMTIuMDgzLDEuODg3Yy0wLjc5NS0wLjc5NC0xLjczLTEuMzU5LTIuNzI3LTEuNjk3djIuMTM1YzAuNDgsMC4yMzksMC45MzUsMC41NSwxLjMzNCwwLjk1ICAgYzEuOTkzLDEuOTk0LDEuOTkzLDUuMjM2LDAsNy4yMjljLTEuOTkzLDEuOTktNS4yMzMsMS45OS03LjIyOSwwYy0xLjk5MS0xLjk5NS0xLjk5MS01LjIzNSwwLTcuMjI5ICAgQzMuNDY2LDMuMjY5LDMuNDgyLDMuMjU5LDMuNDg5LDMuMjVoMC4wMDJsMS4xODEsMS4xNzlMNC42NjUsMC42ODVMMC45MjMsMC42OGwxLjE3NiwxLjE3NkMyLjA5MiwxLjg2OCwyLjA4MSwxLjg4LDIuMDcyLDEuODg3ICAgYy0yLjc2MywyLjc2Mi0yLjc2Myw3LjI0MywwLDEwLjAwNWMyLjc2NywyLjc2NSw3LjI0NSwyLjc2NSwxMC4wMTEsMEMxNC44NDQsOS4xMywxNC44NDcsNC42NDksMTIuMDgzLDEuODg3eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light btns-area" data-toggle="modal" data-target="#modalModificacionMemoria" title="Modificar memoria: Modifica una determinada palabra en memoria.">
+                                            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTM1Mi40NTksMjIwYzAtMTEuMDQ2LTguOTU0LTIwLTIwLTIwaC0yMDZjLTExLjA0NiwwLTIwLDguOTU0LTIwLDIwczguOTU0LDIwLDIwLDIwaDIwNiAgICAgQzM0My41MDUsMjQwLDM1Mi40NTksMjMxLjA0NiwzNTIuNDU5LDIyMHoiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHBhdGggZD0iTTEyNi40NTksMjgwYy0xMS4wNDYsMC0yMCw4Ljk1NC0yMCwyMGMwLDExLjA0Niw4Ljk1NCwyMCwyMCwyMEgyNTEuNTdjMTEuMDQ2LDAsMjAtOC45NTQsMjAtMjBjMC0xMS4wNDYtOC45NTQtMjAtMjAtMjAgICAgIEgxMjYuNDU5eiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cGF0aCBkPSJNMTczLjQ1OSw0NzJIMTA2LjU3Yy0yMi4wNTYsMC00MC0xNy45NDQtNDAtNDBWODBjMC0yMi4wNTYsMTcuOTQ0LTQwLDQwLTQwaDI0NS44ODljMjIuMDU2LDAsNDAsMTcuOTQ0LDQwLDQwdjEyMyAgICAgYzAsMTEuMDQ2LDguOTU0LDIwLDIwLDIwYzExLjA0NiwwLDIwLTguOTU0LDIwLTIwVjgwYzAtNDQuMTEyLTM1Ljg4OC04MC04MC04MEgxMDYuNTdjLTQ0LjExMiwwLTgwLDM1Ljg4OC04MCw4MHYzNTIgICAgIGMwLDQ0LjExMiwzNS44ODgsODAsODAsODBoNjYuODg5YzExLjA0NiwwLDIwLTguOTU0LDIwLTIwQzE5My40NTksNDgwLjk1NCwxODQuNTA1LDQ3MiwxNzMuNDU5LDQ3MnoiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHBhdGggZD0iTTQ2Ny44ODQsMjg5LjU3MmMtMjMuMzk0LTIzLjM5NC02MS40NTgtMjMuMzk1LTg0LjgzNy0wLjAxNmwtMTA5LjgwMywxMDkuNTZjLTIuMzMyLDIuMzI3LTQuMDUyLDUuMTkzLTUuMDEsOC4zNDUgICAgIGwtMjMuOTEzLDc4LjcyNWMtMi4xMiw2Ljk4LTAuMjczLDE0LjU1OSw0LjgyMSwxOS43OGMzLjgxNiwzLjkxMSw5LDYuMDM0LDE0LjMxNyw2LjAzNGMxLjc3OSwwLDMuNTc1LTAuMjM4LDUuMzM4LTAuNzI3ICAgICBsODAuNzI1LTIyLjM2MWMzLjMyMi0wLjkyLDYuMzUtMi42ODMsOC43OS01LjExOWwxMDkuNTczLTEwOS4zNjdDNDkxLjI3OSwzNTEuMDMyLDQ5MS4yNzksMzEyLjk2OCw0NjcuODg0LDI4OS41NzJ6ICAgICAgTTMzMy43NzYsNDUxLjc2OGwtNDAuNjEyLDExLjI1bDExLjg4NS0zOS4xMjlsNzQuMDg5LTczLjkyNWwyOC4yOSwyOC4yOUwzMzMuNzc2LDQ1MS43Njh6IE00MzkuNjE1LDM0Ni4xM2wtMy44NzUsMy44NjcgICAgIGwtMjguMjg1LTI4LjI4NWwzLjg2Mi0zLjg1NGM3Ljc5OC03Ljc5OCwyMC40ODYtNy43OTgsMjguMjg0LDBDNDQ3LjM5OSwzMjUuNjU2LDQ0Ny4zOTksMzM4LjM0NCw0MzkuNjE1LDM0Ni4xM3oiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHBhdGggZD0iTTMzMi40NTksMTIwaC0yMDZjLTExLjA0NiwwLTIwLDguOTU0LTIwLDIwczguOTU0LDIwLDIwLDIwaDIwNmMxMS4wNDYsMCwyMC04Ljk1NCwyMC0yMFMzNDMuNTA1LDEyMCwzMzIuNDU5LDEyMHoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8L2c+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button id="btn-ejecutar" onclick="ejecutarComando('?vaci');" class="btn btn-light btns-area" title="Ejecutar instruccion: Ejecuta una instruccion a la vez.">
+                                                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDMwNiAzMDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwNiAzMDY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0ic2tpcC1uZXh0Ij4KCQk8cGF0aCBkPSJNMCwzMDZsMjE2Ljc1LTE1M0wwLDBWMzA2eiBNMjU1LDB2MzA2aDUxVjBIMjU1eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button id="btn-ejecutar-todo" class="btn btn-light btns-area" onclick="ejecutarTodos();" title="Ejecutar todo: Ejecuta todas las instrucciones">
+                                            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDUxMS42MyA1MTEuNjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMS42MyA1MTEuNjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNNTA2LjIwMyw0MS45NjhjLTMuNjE3LTMuNjE3LTcuOTAyLTUuNDI2LTEyLjg1MS01LjQyNkg0NTYuODFjLTQuOTQ4LDAtOS4yMzIsMS44MDktMTIuODQ3LDUuNDI2ICAgYy0zLjYyLDMuNjE5LTUuNDI3LDcuOTAyLTUuNDI3LDEyLjg1MXYxOTMuNTcyYy0wLjk1NS0yLjA5MS0yLjE5LTMuODk5LTMuNzE3LTUuNDI0TDIzMi4xMSw0MC4yNTcgICBjLTMuNjE2LTMuNjE1LTYuNjU4LTQuODUzLTkuMTM2LTMuNzA5Yy0yLjQ3NCwxLjE0MS0zLjcxMSw0LjE4Ny0zLjcxMSw5LjEzNXYyMDIuNzA4Yy0wLjk1LTIuMDkxLTIuMTg3LTMuODk5LTMuNzA5LTUuNDI0ICAgTDEyLjg0Nyw0MC4yNTdjLTMuNjE3LTMuNjE1LTYuNjYxLTQuODUzLTkuMTM1LTMuNzA5QzEuMjM3LDM3LjY4OSwwLDQwLjczNSwwLDQ1LjY4M3Y0MjAuMjYyYzAsNC45NDgsMS4yNDEsNy45OTgsMy43MTUsOS4xNDEgICBjMi40NzQsMS4xNCw1LjUxOC0wLjA5OSw5LjEzNS0zLjcybDIwMi43MDctMjAyLjcwOGMxLjUyLTEuNzA4LDIuNzYtMy41MTksMy43MDktNS40MjF2MjAyLjcwOGMwLDQuOTQ4LDEuMjM3LDcuOTk0LDMuNzExLDkuMTM0ICAgczUuNTItMC4xLDkuMTM2LTMuNzE3bDIwMi43MDktMjAyLjcwOGMxLjUyMy0xLjcxMSwyLjc2Mi0zLjUyNCwzLjcxNC01LjQyOHYxOTMuNTcxYzAsNC45NDgsMS44MSw5LjIyOSw1LjQyNywxMi44NDcgICBjMy42MTQsMy42MTcsNy44OTgsNS40MjUsMTIuODQ3LDUuNDI1aDM2LjU0NmM0Ljk0NCwwLDkuMjMyLTEuODA4LDEyLjg1LTUuNDI1YzMuNjE0LTMuNjE3LDUuNDI1LTcuODk4LDUuNDI1LTEyLjg0N1Y1NC44MTkgICBDNTExLjYyNiw0OS44NjMsNTA5LjgyLDQ1LjU4NCw1MDYuMjAzLDQxLjk2OHoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="panel">
+                        Memoria &nbsp;&nbsp;&nbsp;
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgLTc2IDM4NCAzODQiIHdpZHRoPSIxNnB4Ij48cGF0aCBkPSJtMCAxMzZ2MzJoMzJ2NjRoMzIwdi02NGgzMnYtMTY4aC0zODR6bTMyMCA2NGgtMjU2di0zMmgyNTZ6bS0yODgtMTY4aDMyMHYxMDRoLTMyMHptMCAwIiBmaWxsPSIjOTFEQzVBIi8+PHBhdGggZD0ibTIwOCA2NGgzMnY0MGgtMzJ6bTAgMCIgZmlsbD0iIzkxREM1QSIvPjxwYXRoIGQ9Im0yNzIgNjRoMzJ2NDBoLTMyem0wIDAiIGZpbGw9IiM5MURDNUEiLz48cGF0aCBkPSJtMTQ0IDY0aDMydjQwaC0zMnptMCAwIiBmaWxsPSIjOTFEQzVBIi8+PHBhdGggZD0ibTgwIDY0aDMydjQwaC0zMnptMCAwIiBmaWxsPSIjOTFEQzVBIi8+PC9zdmc+Cg==" />
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">Posición</div>
+                                <div class="col">Valor</div>
+                            </div>
+                        </div>
+                        <div id="div-memoria" class="panel-datos container"></div>
+                        </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">
+                    <div class="col salida">
+                        <div id="iconos-consola">
+                            Terminal&nbsp;&nbsp;&nbsp;
+                            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5NS4zMDQsNjEuMjE3SDE2LjY5NkM3LjQ3NSw2MS4yMTcsMCw2OC42OTMsMCw3Ny45MTN2MzU2LjE3NGMwLDkuMjIsNy40NzUsMTYuNjk2LDE2LjY5NiwxNi42OTZoNDc4LjYwOSAgICBjOS4yMiwwLDE2LjY5Ni03LjQ3NSwxNi42OTYtMTYuNjk2Vjc3LjkxM0M1MTIsNjguNjkzLDUwNC41MjUsNjEuMjE3LDQ5NS4zMDQsNjEuMjE3eiBNNDc4LjYwOSw0MTcuMzkxSDMzLjM5MVYxOTQuNDI0aDQ0NS4yMTcgICAgVjQxNy4zOTF6IE00NzguNjA5LDE2MS4wMzNIMzMuMzkxVjk0LjYwOWg0NDUuMjE3VjE2MS4wMzN6IiBmaWxsPSIjRDgwMDI3Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDQzLjU2OCwxMDMuMjQ3Yy0xMi4yNzUsMC0yMi4yNjEsOS45ODYtMjIuMjYxLDIyLjI2MWMwLDEyLjI3NSw5Ljk4NSwyMi4yNjEsMjIuMjYxLDIyLjI2MSAgICBjMTIuMjc1LDAsMjIuMjYxLTkuOTg2LDIyLjI2MS0yMi4yNjFDNDY1LjgyOSwxMTMuMjMzLDQ1NS44NDMsMTAzLjI0Nyw0NDMuNTY4LDEwMy4yNDd6IiBmaWxsPSIjRDgwMDI3Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzgyLjkyNiwxMDMuMjQ3Yy0xMi4yNzUsMC0yMi4yNjEsOS45ODYtMjIuMjYxLDIyLjI2MWMwLDEyLjI3NSw5Ljk4NiwyMi4yNjEsMjIuMjYxLDIyLjI2MXMyMi4yNjEtOS45ODYsMjIuMjYxLTIyLjI2MSAgICBDNDA1LjE4NywxMTMuMjMzLDM5NS4yMDEsMTAzLjI0NywzODIuOTI2LDEwMy4yNDd6IiBmaWxsPSIjRDgwMDI3Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzIyLjI4NSwxMDMuMjQ3Yy0xMi4yNzUsMC0yMi4yNjEsOS45ODYtMjIuMjYxLDIyLjI2MWMwLDEyLjI3NSw5Ljk4NSwyMi4yNjEsMjIuMjYxLDIyLjI2MSAgICBjMTIuMjc1LDAsMjIuMjYxLTkuOTg2LDIyLjI2MS0yMi4yNjFDMzQ0LjU0NiwxMTMuMjMzLDMzNC41NiwxMDMuMjQ3LDMyMi4yODUsMTAzLjI0N3oiIGZpbGw9IiNEODAwMjciLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yMzUuNDUsMjkzLjE5M2wtNTQuNjUzLTQ2LjUwNGMtNy4wMjItNS45NzYtMTcuNTU5LTUuMTI4LTIzLjUzNSwxLjg5NmMtNS45NzYsNy4wMjItNS4xMjcsMTcuNTU5LDEuODk2LDIzLjUzNSAgICBsMzkuNzA5LDMzLjc4OWwtMzkuNzA5LDMzLjc4OWMtNy4wMjMsNS45NzYtNy44NzEsMTYuNTEyLTEuODk2LDIzLjUzNWM1Ljk3NSw3LjAyMiwxNi41MTIsNy44NzEsMjMuNTM1LDEuODk2bDU0LjY1My00Ni41MDQgICAgQzI0My4yOCwzMTEuOTYyLDI0My4yOCwyOTkuODU0LDIzNS40NSwyOTMuMTkzeiIgZmlsbD0iI0Q4MDAyNyIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM0Mi4wMjIsMzM1LjcxNmgtNjUuOTU0Yy05LjIyLDAtMTYuNjk2LDcuNDc1LTE2LjY5NiwxNi42OTZzNy40NzUsMTYuNjk2LDE2LjY5NiwxNi42OTZoNjUuOTU0ICAgIGM5LjIyLDAsMTYuNjk2LTcuNDc1LDE2LjY5Ni0xNi42OTZTMzUxLjI0MiwzMzUuNzE2LDM0Mi4wMjIsMzM1LjcxNnoiIGZpbGw9IiNEODAwMjciLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                        </div>
+                        <div class="salidaP areaTexto" id="con-salida"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+    </div>
+  <!-- Modales -->
+    <div class="modal fade" id="modalDeLectura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Por favor ingrese un valor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+            <div class="modal-body">
+                <input type="text" placeholder="-99999 a 99999" class="form-control" id="input-lectura-1" onkeyup="verificarDato(1);">
+                <div id="mensaje-input-1" class="is-valid"></div>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="ejecutarComando('?vaci');">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalModificacionMemoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ingrese la direccion de memoria y su nueva palabra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Posicion 0 a 999" class="form-control" id="input-lectura-2" onkeyup="verificarDato(2);">
+                <div id="mensaje-input-2" class="is-valid"></div><br>
+                <input type="text" placeholder="Contenido" class="form-control" id="input-lectura-3" onkeyup="verificarDato(3);">
+                <div id="mensaje-input-3" class="is-valid"></div><br>
+            </div>
+                <div class="modal-footer">
+                    <button id="btn-me-mod" type="button" class="btn btn-primary" onclick="ejecutarComando('?modp');">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</html>
